@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodKnights - Your Cart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cart.css') }}">
+</head>
+<body>
+    <div class="wrap cf">
+        <h1 class="projTitle">FoodKnights<span>  lets go</span> Finalise the order!</h1>
+        <div class="heading cf">
+          <h1>My Cart</h1>
+          <a href="" id="continuetorest" class="continue">Back to Restaurant</a>
+        </div>
+        <div class="heading cf">
+          <a href="/" id="homepage" class="continue">Home</a>
+        </div>
+        <div class="cart">
+      <!--    <ul class="tableHead">
+            <li class="prodHeader">Product</li>
+            <li>Quantity</li>
+            <li>Total</li>
+             <li>Remove</li>
+          </ul>-->
+          <ul class="cartWrap">
+          </ul>
+        </div>
+        
+       
+        
+        <div class="subtotal cf">
+          <ul>
+            <li class="totalRow"><span class="label">Subtotal</span><span class="value" id = "subtotalprice">Rs. 0</span></li>
+            
+                <li class="totalRow"><span class="label">Shipping</span><span class="value" id="shippingprice">Rs. 0</span></li>
+            
+                  <li class="totalRow"><span class="label">Tax</span><span class="value" id="taxprice">Rs. 0</span></li>
+                  <li class="totalRow final"><span class="label">Total</span><span class="value" id="totalprice">Rs. 0</span></li>
+            <li class="totalRow"><a href="/checkout" class="btn continue" id="checkout">Checkout</a></li>
+              
+          </ul>
+        </div>
+      </div>
+      <script src="{{ url_for('static', filename='js/cart.js') }}"></script>
+</body>
+</html>
